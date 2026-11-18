@@ -1,0 +1,100 @@
+{
+  "escritorio": {
+    "nome": "Arista",
+    "endereco": "Av. Brigadeiro Faria Lima, 4509 – Itaim Bibi, São Paulo – SP, CEP 04538-133",
+    "enderecoRota": "Av. Brigadeiro Faria Lima, 4509, Itaim Bibi, São Paulo - SP, 04538-133",
+    "descricao": "No trecho final da avenida, entre o Itaim Bibi e a Vila Olímpia."
+  },
+  "atualizacao": "novembro 2026",
+  "alertas": {
+    "emergencia": {
+      "titulo": "Em caso de emergência",
+      "texto": "Ligue 192 (SAMU) ou 193 (Corpo de Bombeiros).",
+      "contatos": [
+        { "numero": "192", "nome": "SAMU" },
+        { "numero": "193", "nome": "Bombeiros" }
+      ]
+    }
+  },
+  "categorias": [
+    { "id": "restaurantes", "nome": "Restaurantes", "icone": "restaurante", "descricao": "Desde buffets por quilo até restaurantes à la carte, todos a poucos minutos a pé.", "nota": "Os valores indicados são uma média por pessoa, sem bebidas." },
+    { "id": "cafes", "nome": "Cafés e padarias", "icone": "cafe" },
+    { "id": "mercados", "nome": "Mercados", "icone": "mercado" },
+    { "id": "saude", "nome": "Hospitais e pronto-socorro", "icone": "saude", "alerta": "emergencia" },
+    { "id": "farmacias", "nome": "Farmácias", "icone": "farmacia", "alerta": "emergencia" },
+    { "id": "academias", "nome": "Academias", "icone": "academia" },
+    { "id": "servicos", "nome": "Compras e serviços", "icone": "servico" },
+    { "id": "bancos", "nome": "Agências bancárias", "icone": "banco" }
+  ],
+  "transporte": [
+    {
+      "tipo": "Ônibus",
+      "icone": "onibus",
+      "texto": "O prédio fica em corredor de ônibus. Há pontos na própria Faria Lima.",
+      "linhas": ["106A-10", "477P-10", "576M-10", "6412-10", "847P-10", "847P-42", "957T-10", "958P-10", "N505-11 (noturna)"],
+      "dica": "para descobrir a melhor linha a partir da sua casa, use os aplicativos SPTrans Olho Vivo, Google Maps ou Moovit. Eles mostram o trajeto e a previsão de chegada dos ônibus em tempo real."
+    },
+    {
+      "tipo": "Trem",
+      "icone": "trem",
+      "texto": "A Estação Vila Olímpia, da Linha 9-Esmeralda, fica a cerca de 1,1 km a oeste, na Marginal Pinheiros. São mais ou menos 19 minutos a pé.",
+      "destino": "Estação Vila Olímpia CPTM, São Paulo - SP",
+      "modo": "walking"
+    },
+    {
+      "tipo": "Metrô",
+      "icone": "metro",
+      "texto": "Não há estação de metrô a uma distância que dê para ir a pé. As mais próximas são a Faria Lima e a Fradique Coutinho (Linha 4-Amarela).",
+      "destino": "Estação Faria Lima - Linha 4 Amarela, São Paulo - SP",
+      "modo": "transit"
+    },
+    {
+      "tipo": "Ciclovia",
+      "icone": "bike",
+      "texto": "A Av. Faria Lima tem ciclovia, e há estações de bicicletas (Bike Itaú) e patinetes compartilhados próximos na região. O edifício conta com bicicletário."
+    },
+    {
+      "tipo": "Carro",
+      "icone": "carro",
+      "texto": "Principais vias de acesso: Av. Brig. Faria Lima, Av. Pres. Juscelino Kubitschek, Marginal Pinheiros, Av. Santo Amaro, Av. Dr. Cardoso de Melo e Av. Hélio Pellegrino."
+    }
+  ],
+  "locais": [
+    { "nome": "Barakah", "categoria": "restaurantes", "tipo": "Buffet árabe", "endereco": "R. Elvira Ferraz, 175", "distancia": 290, "tempo": 4, "preco": "R$ 80" },
+    { "nome": "Maremonti", "categoria": "restaurantes", "tipo": "Italiano e pizzas", "endereco": "R. Elvira Ferraz, 250", "distancia": 400, "tempo": 6, "preco": "R$ 95" },
+    { "nome": "Tempero da Villa", "categoria": "restaurantes", "tipo": "Buffet por quilo", "endereco": "R. Ramos Batista, 471", "distancia": 500, "tempo": 7, "preco": "R$ 40" },
+    { "nome": "Candela Bar e Restaurante", "categoria": "restaurantes", "tipo": "Menu executivo", "endereco": "R. Fidêncio Ramos, 14", "distancia": 550, "tempo": 8, "preco": "R$ 40 a 120", "destaque": "Feijoada às quartas-feiras" },
+    { "nome": "Família Geraci", "categoria": "restaurantes", "tipo": "Italiano", "endereco": "R. Fidêncio Ramos, 69", "distancia": 600, "tempo": 9, "preco": "R$ 60 a 160" },
+    { "nome": "Ave Maria", "categoria": "restaurantes", "tipo": "Buffet por quilo", "endereco": "R. Min. Jesuíno Cardoso, 381", "distancia": 750, "tempo": 10, "preco": "R$ 40 a 60" },
+
+    { "nome": "Sterna Café", "categoria": "cafes", "tipo": "Café da manhã e lanches", "endereco": "Av. Brig. Faria Lima, 4440", "distancia": 240, "tempo": 4, "destaque": "Em frente ao edifício, do outro lado da avenida" },
+    { "nome": "Panificadora Santa Olímpia", "categoria": "cafes", "tipo": "Padaria", "endereco": "R. Casa do Ator, 682", "distancia": 300, "tempo": 5 },
+    { "nome": "Raus Café", "categoria": "cafes", "tipo": "Cafés especiais", "endereco": "Av. Brig. Faria Lima, 3729", "distancia": 450, "tempo": 6 },
+    { "nome": "Ça-Va Bistrô e Café", "categoria": "cafes", "tipo": "Café e brunch", "endereco": "Av. Brig. Faria Lima, 4055", "distancia": 500, "tempo": 7 },
+
+    { "nome": "Natural da Terra", "categoria": "mercados", "tipo": "Hortifrúti e mercearia", "endereco": "Av. Hélio Pellegrino, 531", "distancia": 240, "tempo": 4 },
+    { "nome": "Carrefour Express", "categoria": "mercados", "tipo": "Supermercado", "endereco": "R. Gomes de Carvalho, 784", "distancia": 500, "tempo": 7 },
+    { "nome": "Pão de Açúcar", "categoria": "mercados", "tipo": "Supermercado", "endereco": "R. Clodomiro Amazonas, 955", "distancia": 600, "tempo": 8 },
+
+    { "nome": "Hospital São Luiz Itaim", "categoria": "saude", "tipo": "Rede D'Or", "endereco": "R. Dr. Alceu de Campos Rodrigues, 143", "distancia": 1100, "tempo": 15, "telefone": "(11) 3040-1100" },
+    { "nome": "Pronto-Socorro Santa Paula", "categoria": "saude", "tipo": "Pronto-socorro", "endereco": "Av. Santo Amaro, 2468", "distancia": 1700, "tempo": 23, "telefone": "(11) 4020-0057" },
+
+    { "nome": "Drogaria São Paulo", "categoria": "farmacias", "tipo": "Farmácia", "endereco": "R. Clodomiro Amazonas, 1327", "distancia": 350, "tempo": 5 },
+    { "nome": "Drogasil", "categoria": "farmacias", "tipo": "Farmácia", "endereco": "R. Clodomiro Amazonas, 1299", "distancia": 350, "tempo": 5 },
+    { "nome": "Drogaria São Paulo e Droga Raia", "categoria": "farmacias", "tipo": "No Shopping Vila Olímpia", "endereco": "R. Olimpíadas, 360", "distancia": 800, "tempo": 11 },
+
+    { "nome": "SmartFit | Clodomiro Amazonas II", "categoria": "academias", "tipo": "Musculação e aulas", "endereco": "R. Clodomiro Amazonas, 889", "distancia": 650, "tempo": 9 },
+    { "nome": "SmartFit | Hs Gomes de Carvalho", "categoria": "academias", "tipo": "Musculação e aulas", "endereco": "R. Gomes de Carvalho, 1467", "distancia": 850, "tempo": 12 },
+    { "nome": "Bluefit", "categoria": "academias", "tipo": "Musculação e aulas", "endereco": "Av. Dr. Cardoso de Melo, 1191", "distancia": 950, "tempo": 13 },
+
+    { "nome": "Correios", "categoria": "servicos", "tipo": "Agência Clodomiro Amazonas", "endereco": "R. Clodomiro Amazonas, 799", "distancia": 750, "tempo": 10 },
+    { "nome": "Shopping Vila Olímpia", "categoria": "servicos", "tipo": "Lojas, farmácias e alimentação", "endereco": "R. Olimpíadas, 360", "distancia": 800, "tempo": 11 },
+    { "nome": "Kalunga", "categoria": "servicos", "tipo": "Papelaria e escritório", "endereco": "R. Olimpíadas, 360 – loja 426 (Shopping Vila Olímpia)", "enderecoRota": "Kalunga Shopping Vila Olímpia, R. Olimpíadas, 360", "distancia": 800, "tempo": 11 },
+
+    { "nome": "Caixa Econômica Federal", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Brig. Faria Lima, 4023", "distancia": 550, "tempo": 8 },
+    { "nome": "Santander Work Café", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "R. Olimpíadas, 120", "distancia": 600, "tempo": 8 },
+    { "nome": "Bradesco", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Brig. Faria Lima, 3950", "distancia": 650, "tempo": 9 },
+    { "nome": "Banco do Brasil", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "R. Clodomiro Amazonas, 945", "distancia": 650, "tempo": 9 },
+    { "nome": "Itaú", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Pres. Juscelino Kubitschek, 1300", "distancia": 750, "tempo": 11 }
+  ]
+}
