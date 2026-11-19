@@ -429,10 +429,10 @@
   let DATA = null;
   const state = { categoria: 'todos', busca: '', ordem: 'distancia' };
 
-  function rotaUrl(destino, modo) {
+  function rotaUrl(destino, modo, origem) {
     const params = new URLSearchParams({
       api: '1',
-      origin: DATA.escritorio.enderecoRota,
+      origin: origem || DATA.escritorio.enderecoRota,
       destination: destino,
       travelmode: modo || 'walking'
     });
@@ -513,7 +513,7 @@
       : `<span class="walk">${icon('walk')}${fmtDist(l.distancia)} · ${l.tempo} min</span>`;
     const acao = l.noPredio
       ? `<div class="btn btn-static">${icon('building')} Aqui no edifício</div>`
-      : `<a class="btn btn-brand" href="${esc(rotaUrl(destino, 'walking'))}" target="_blank" rel="noopener"
+      : `<a class="btn btn-brand" href="${esc(rotaUrl(destino, 'walking', l.origem && DATA.saidas && DATA.saidas[l.origem]))}" target="_blank" rel="noopener"
          aria-label="Checar rota até ${esc(l.nome)} no Google Maps">${icon('route')} Checar rota</a>`;
     return `<article class="card${l.noPredio ? ' card-inhouse' : ''}" style="animation-delay:${Math.min(idx, 12) * 35}ms">
       <div class="card-top">
