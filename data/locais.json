@@ -78,7 +78,7 @@
     { "nome": "Oba Hortifruti", "categoria": "cafes", "tipo": "Hortifrúti e mercearia", "endereco": "R. Clodomiro Amazonas, 1132", "distancia": 400, "tempo": 5 },
     { "nome": "Cacau Show", "categoria": "cafes", "tipo": "Chocolates e presentes", "endereco": "R. Clodomiro Amazonas, 1080", "distancia": 450, "tempo": 6 },
     { "nome": "Raus Café", "categoria": "cafes", "tipo": "Cafés especiais", "endereco": "Av. Brig. Faria Lima, 3729", "distancia": 450, "tempo": 6 },
-    { "nome": "Ça-Va Bistrô e Café", "categoria": "cafes", "tipo": "Café e brunch", "endereco": "Av. Brig. Faria Lima, 4055", "distancia": 500, "tempo": 7 }
+    { "nome": "Ça-Va Bistrô e Café", "categoria": "cafes", "tipo": "Café e brunch", "endereco": "Av. Brig. Faria Lima, 4055", "distancia": 500, "tempo": 7 },
     { "nome": "Pão de Açúcar", "categoria": "cafes", "tipo": "Supermercado", "endereco": "R. Clodomiro Amazonas, 955", "distancia": 600, "tempo": 8 },
 
     { "nome": "Hospital São Luiz Itaim", "categoria": "saude", "tipo": "Rede D'Or", "endereco": "R. Dr. Alceu de Campos Rodrigues, 143", "distancia": 1100, "tempo": 15, "telefone": "(11) 3040-1100" },
