@@ -89,7 +89,6 @@
     { "nome": "Drogaria São Paulo e Droga Raia", "categoria": "farmacias", "tipo": "No Shopping Vila Olímpia", "endereco": "R. Olimpíadas, 360", "distancia": 800, "tempo": 11 },
 
     { "nome": "SmartFit | Clodomiro Amazonas II", "categoria": "academias", "tipo": "Musculação e aulas", "endereco": "R. Clodomiro Amazonas, 889", "distancia": 650, "tempo": 9 },
-    { "nome": "SmartFit | Hs Gomes de Carvalho", "categoria": "academias", "tipo": "Musculação e aulas", "endereco": "R. Gomes de Carvalho, 1467", "distancia": 850, "tempo": 12 },
     { "nome": "Bluefit", "categoria": "academias", "tipo": "Musculação e aulas", "endereco": "Av. Dr. Cardoso de Melo, 1191", "distancia": 950, "tempo": 13 },
 
     { "nome": "Correios", "categoria": "servicos", "tipo": "Agência Clodomiro Amazonas", "endereco": "R. Clodomiro Amazonas, 799", "distancia": 750, "tempo": 10 },
