@@ -231,6 +231,13 @@
   .tag { font-size: 13px; font-weight: 700; padding: 5px 11px; border-radius: 999px; background: var(--night); color: #fff; }
   .tag.hl { background: rgba(255,196,0,.18); color: #8a5a00; }
   .card .btn { margin-top: auto; width: 100%; padding: 12px 18px; }
+  .obs { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; font-weight: 600; color: #8a5a00; background: rgba(255,196,0,.14); border-radius: 12px; padding: 9px 12px; }
+  .obs svg { width: 16px; height: 16px; margin-top: 1px; color: var(--orange); }
+  .walk.inhouse { background: var(--brand-grad); color: #0a0a0a; }
+  .walk.inhouse svg { color: #0a0a0a; }
+  .card-inhouse { border-color: rgba(255,138,0,.45); }
+  .btn-static { background: var(--night); color: #fff; cursor: default; }
+  .btn-static:hover { transform: none; }
   .empty { text-align: center; padding: 64px 24px; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--radius-lg); background: var(--paper); }
   .empty strong { display: block; color: var(--ink); font-size: 18px; margin-bottom: 6px; }
 
@@ -240,6 +247,8 @@
   .foot-cta { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 28px; flex-wrap: wrap; padding: 36px; border-radius: var(--radius-xl); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); }
   .foot-cta h3 { font-size: clamp(22px, 3vw, 30px); letter-spacing: -.02em; line-height: 1.2; }
   .foot-cta p { color: rgba(255,255,255,.64); margin-top: 6px; }
+  .mail-link { color: var(--amber); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; word-break: break-all; }
+  .mail-link:hover { color: var(--orange); }
   .foot-bottom { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); color: rgba(255,255,255,.64); font-size: 14px; }
 
   .to-top { position: fixed; right: 20px; bottom: 20px; width: 48px; height: 48px; border-radius: 50%; background: var(--brand-grad); color: #0a0a0a; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(255,138,0,.35); opacity: 0; pointer-events: none; transform: translateY(10px); transition: all .3s var(--ease); z-index: 30; }
@@ -369,10 +378,12 @@
     <div class="foot-cta">
       <div>
         <h3>Conhece algum lugar que poderia fazer parte deste guia?</h3>
-        <p>Compartilhe sua sugestão com o time de Marketing.</p>
+        <p>Compartilhe sua sugestão com o time de Marketing pelo e-mail
+          <a class="mail-link" href="mailto:marketing@arista.com.br?subject=Sugest%C3%A3o%20para%20o%20Guia%20Faria%20Lima%204509">marketing@arista.com.br</a>.</p>
       </div>
-      <a href="#topo" class="btn btn-brand">Voltar ao topo
-        <svg class="i" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+      <a href="mailto:marketing@arista.com.br?subject=Sugest%C3%A3o%20para%20o%20Guia%20Faria%20Lima%204509" class="btn btn-brand">
+        <svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Enviar sugestão</a>
     </div>
     <div class="foot-bottom">
       <span>© Arista · Ecossistema de Soluções Tecnológicas</span>
@@ -405,6 +416,7 @@
     pin: '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
     phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
     route: '<circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h8.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H16"/>',
+    building: '<path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/>',
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
     alert: '<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/>',
     all: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>'
@@ -494,11 +506,19 @@
     if (l.destaque) tags.push(`<span class="tag hl">★ ${esc(l.destaque)}</span>`);
     const tel = l.telefone
       ? `<div>${icon('phone')}<a href="tel:+55${esc(l.telefone.replace(/\D/g, ''))}">${esc(l.telefone)}</a></div>` : '';
+    const obs = l.observacao ? `<div class="obs">${icon('info')}<span>${esc(l.observacao)}</span></div>` : '';
     const destino = l.enderecoRota || `${l.nome}, ${l.endereco}, São Paulo - SP`;
-    return `<article class="card" style="animation-delay:${Math.min(idx, 12) * 35}ms">
+    const badge = l.noPredio
+      ? `<span class="walk inhouse">${icon('building')}No prédio</span>`
+      : `<span class="walk">${icon('walk')}${fmtDist(l.distancia)} · ${l.tempo} min</span>`;
+    const acao = l.noPredio
+      ? `<div class="btn btn-static">${icon('building')} Aqui no edifício</div>`
+      : `<a class="btn btn-brand" href="${esc(rotaUrl(destino, 'walking'))}" target="_blank" rel="noopener"
+         aria-label="Checar rota até ${esc(l.nome)} no Google Maps">${icon('route')} Checar rota</a>`;
+    return `<article class="card${l.noPredio ? ' card-inhouse' : ''}" style="animation-delay:${Math.min(idx, 12) * 35}ms">
       <div class="card-top">
         <div class="c-icon">${icon(cat ? cat.icone : 'pin')}</div>
-        <span class="walk">${icon('walk')}${fmtDist(l.distancia)} · ${l.tempo} min</span>
+        ${badge}
       </div>
       <div>
         <h4>${esc(l.nome)}</h4>
@@ -508,9 +528,9 @@
         <div>${icon('pin')}<span>${esc(l.endereco)}</span></div>
         ${tel}
       </div>
+      ${obs}
       ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}
-      <a class="btn btn-brand" href="${esc(rotaUrl(destino, 'walking'))}" target="_blank" rel="noopener"
-         aria-label="Checar rota até ${esc(l.nome)} no Google Maps">${icon('route')} Checar rota</a>
+      ${acao}
     </article>`;
   }
 
@@ -519,7 +539,7 @@
     const q = norm(state.busca.trim());
     let itens = DATA.locais.filter(l =>
       (state.categoria === 'todos' || l.categoria === state.categoria) &&
-      (!q || norm([l.nome, l.tipo, l.endereco, l.destaque || ''].join(' ')).includes(q))
+      (!q || norm([l.nome, l.tipo, l.endereco, l.destaque || '', l.observacao || ''].join(' ')).includes(q))
     );
     itens.sort(state.ordem === 'nome'
       ? (a, b) => a.nome.localeCompare(b.nome, 'pt-BR')
