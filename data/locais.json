@@ -95,10 +95,10 @@
     { "nome": "Shopping Vila Olímpia", "categoria": "servicos", "tipo": "Lojas, farmácias e alimentação", "endereco": "R. Olimpíadas, 360", "distancia": 800, "tempo": 11 },
     { "nome": "Kalunga", "categoria": "servicos", "tipo": "Papelaria e escritório", "endereco": "R. Olimpíadas, 360 – loja 426 (Shopping Vila Olímpia)", "enderecoRota": "Kalunga Shopping Vila Olímpia, R. Olimpíadas, 360", "distancia": 800, "tempo": 11 },
 
-    { "nome": "Caixa Econômica Federal", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Brig. Faria Lima, 4023", "distancia": 550, "tempo": 8 },
+    { "nome": "Caixa Econômica Federal", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Brig. Faria Lima, 4023", "distancia": 450, "tempo": 8 },
     { "nome": "Santander Work Café", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "R. Olimpíadas, 120", "distancia": 600, "tempo": 8 },
-    { "nome": "Bradesco", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Brig. Faria Lima, 3950", "distancia": 650, "tempo": 9 },
-    { "nome": "Banco do Brasil", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "R. Clodomiro Amazonas, 945", "distancia": 650, "tempo": 9 },
-    { "nome": "Itaú", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Pres. Juscelino Kubitschek, 1300", "distancia": 750, "tempo": 11 }
+    { "nome": "Bradesco", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Brig. Faria Lima, 3950", "distancia": 450, "tempo": 7 },
+    { "nome": "Banco do Brasil", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "R. Clodomiro Amazonas, 945", "distancia": 750, "tempo": 11 },
+    { "nome": "Itaú", "categoria": "bancos", "tipo": "Agência bancária", "endereco": "Av. Pres. Juscelino Kubitschek, 1300", "distancia": 200, "tempo": 3 }
   ]
 }
