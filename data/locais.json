@@ -6,6 +6,9 @@
     "descricao": "No trecho final da avenida, entre o Itaim Bibi e a Vila Olímpia."
   },
   "atualizacao": "novembro 2026",
+  "saidas": {
+    "atilio": "R. Prof. Atílio Innocenti, Itaim Bibi, São Paulo - SP"
+  },
   "alertas": {
     "emergencia": {
       "titulo": "Em caso de emergência",
@@ -59,12 +62,12 @@
     }
   ],
   "locais": [
-    { "nome": "Toronto Restaurante e Pizzaria", "categoria": "restaurantes", "tipo": "Buffet e menu executivo", "endereco": "R. Comendador Miguel Calfat, 681", "distancia": 170, "tempo": 2, "preco": "R$ 40 a 120", "observacao": "Saída pela R. Prof. Atílio Innocenti" },
+    { "nome": "Toronto Restaurante e Pizzaria", "categoria": "restaurantes", "tipo": "Buffet e menu executivo", "endereco": "R. Comendador Miguel Calfat, 681", "distancia": 170, "tempo": 2, "preco": "R$ 40 a 120", "observacao": "Saída pela R. Prof. Atílio Innocenti", "origem": "atilio" },
     { "nome": "Madero Burger Quatá", "categoria": "restaurantes", "tipo": "Hambúrguer", "endereco": "R. Quatá, 662", "distancia": 260, "tempo": 4, "preco": "R$ 60 a 80" },
-    { "nome": "Hamburgueria Tradi Itaim", "categoria": "restaurantes", "tipo": "Hambúrguer", "endereco": "R. Prof. Atílio Innocenti, 757", "distancia": 270, "tempo": 2, "preco": "R$ 40 a 60", "observacao": "Saída pela R. Prof. Atílio Innocenti" },
+    { "nome": "Hamburgueria Tradi Itaim", "categoria": "restaurantes", "tipo": "Hambúrguer", "endereco": "R. Prof. Atílio Innocenti, 757", "distancia": 270, "tempo": 2, "preco": "R$ 40 a 60", "observacao": "Saída pela R. Prof. Atílio Innocenti", "origem": "atilio" },
     { "nome": "Sesame – Grill & Salad", "categoria": "restaurantes", "tipo": "Buffet", "endereco": "R. Clodomiro Amazonas, 1109", "distancia": 400, "tempo": 6, "preco": "R$ 40 a 60" },
     { "nome": "Sebastião", "categoria": "restaurantes", "tipo": "Buffet", "endereco": "R. Ramos Batista, 276", "distancia": 500, "tempo": 7, "preco": "R$ 40 a 60" },
-    { "nome": "Atílio's", "categoria": "restaurantes", "tipo": "Comida brasileira", "endereco": "R. Prof. Atílio Innocenti, 439", "distancia": 500, "tempo": 7, "preco": "R$ 40 a 60", "observacao": "Saída pela R. Prof. Atílio Innocenti" },
+    { "nome": "Atílio's", "categoria": "restaurantes", "tipo": "Comida brasileira", "endereco": "R. Prof. Atílio Innocenti, 439", "distancia": 500, "tempo": 7, "preco": "R$ 40 a 60", "observacao": "Saída pela R. Prof. Atílio Innocenti", "origem": "atilio" },
     { "nome": "McDonald's", "categoria": "restaurantes", "tipo": "Fast-food", "endereco": "Av. Pres. Juscelino Kubitschek, 1201", "distancia": 800, "tempo": 11 },
     { "nome": "Barakah", "categoria": "restaurantes", "tipo": "Buffet árabe", "endereco": "R. Elvira Ferraz, 175", "distancia": 290, "tempo": 4, "preco": "R$ 80" },
     { "nome": "Maremonti", "categoria": "restaurantes", "tipo": "Italiano e pizzas", "endereco": "R. Elvira Ferraz, 250", "distancia": 400, "tempo": 6, "preco": "R$ 95" },
